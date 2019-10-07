@@ -1,6 +1,7 @@
 ---
 title: Our questions
 date: 2019-10-07T21:06:47.938Z
+parent_page: Readability Guidelines
 ---
 We identified these questions in Alpha. Then we researched usability evidence to answer them in Beta.
  
