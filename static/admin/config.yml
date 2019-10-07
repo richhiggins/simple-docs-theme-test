@@ -22,4 +22,4 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Parent page", name: "parent_page", widget: "relation",
       collection: "pages", searchFields:["title"], valueField: "title",
-      displayFields: ["title"], optional: true }
+      displayFields: ["title"], required: false }
