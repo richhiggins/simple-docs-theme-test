@@ -1,5 +1,5 @@
 ---
-title: Readability Guidelines
+title: Readability Guideline
 date: 2019-10-07T21:00:27.519Z
 ---
 A project from Content Design London.
