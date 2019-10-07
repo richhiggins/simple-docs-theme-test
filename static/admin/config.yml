@@ -21,4 +21,4 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Parent page", name: "parent_page", widget: "relation",
       collection: "pages", searchFields:["title"], valueField: "title",
-      displayFields: ["title"] }
+      displayFields: ["title"], optional: true }
