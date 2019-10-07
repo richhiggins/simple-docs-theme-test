@@ -17,7 +17,7 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - {name: slug, label: Slug}
+      - {name: slug, label: Slug, widget: "string"}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Parent page", name: "parent_page", widget: "relation",
