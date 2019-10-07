@@ -7,9 +7,9 @@ public_folder: /img
 publish_mode: editorial_workflow
 
 collections:
-  - name: "docs"
-    label: "Docs"
-    folder: "docs"
+  - name: "pages"
+    label: "Pages"
+    folder: "pages"
     create: true
     slug: "{{slug}}"
     preview_path: "/{{slug}}"
@@ -19,16 +19,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: settings
-    label: Settings
-    files:
-      - file: data/settings/navigation.yml
-        label: Navigation
-        name: navigation
-        fields:
-          - label: Navigation
-            name: nav_items
-            widget: list
-            fields:
-              - { label: Label, name: label, widget: string }
-              - { label: Path, name: path, widget: string }
+      - { label: "Parent page", name: "parent_page", widget: "relation",
+      collection: "pages", searchFields:["title"], valueField: "title",
+      displayFields: ["title"] }
