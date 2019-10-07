@@ -11,14 +11,15 @@ collections:
     label: "Pages"
     folder: "pages"
     create: true
-    slug: "{{slug}}"
-    preview_path: "/{{slug}}"
+    slug: {{fields.slug}}
+    preview_path: "/{{fields.slug}}"
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {name: slug, label: Slug}
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Parent page", name: "parent_page", widget: "relation",
       collection: "pages", searchFields:["title"], valueField: "title",
       displayFields: ["title"], optional: true }
