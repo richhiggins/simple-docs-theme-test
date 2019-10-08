@@ -11,8 +11,8 @@ collections:
     label: "Pages"
     folder: "docs"
     create: true
-    slug: "{{field.slug}}"
-    preview_path: "/{{field.slug}}"
+    slug: "{{fields.slug}}"
+    preview_path: "/{{fields.slug}}"
     editor:
       preview: false
     fields:
