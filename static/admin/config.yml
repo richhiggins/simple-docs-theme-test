@@ -9,7 +9,7 @@ publish_mode: editorial_workflow
 collections:
   - name: "pages"
     label: "Pages"
-    folder: "pages"
+    folder: "docs"
     create: true
     slug: "{{slug}}"
     preview_path: "/{{slug}}"
