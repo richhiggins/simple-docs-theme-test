@@ -10,6 +10,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        parent_page
       }
       code {
         body
@@ -24,7 +25,8 @@ export default ({ data }) => (
       <title>{data.mdx.frontmatter.title}</title>
       <meta name="description" content={data.mdx.frontmatter.description} />
     </Helmet>
-    <p style={{ color: "orange" }}>[shadowed theme template]</p>
+    {/*<p style={{ color: "orange" }}>[shadowed theme template]</p>*/}
+    {data.mdx.frontmatter.slug}
     <h1>{data.mdx.frontmatter.title}</h1>
     <MDXRenderer>{data.mdx.code.body}</MDXRenderer>
   </Layout>
