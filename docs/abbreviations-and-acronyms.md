@@ -2,7 +2,7 @@
 title: Abbreviations and acronyms
 slug: abbreviations-and-acronyms
 date: 2019-10-08T21:42:53.664Z
-parent_page: Grammar points
+section: Grammar points
 ---
 Following this helps:
 
