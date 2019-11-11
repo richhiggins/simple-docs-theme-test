@@ -2,7 +2,7 @@
 title: Contractions
 slug: contractions
 date: 2019-10-09T19:50:25.623Z
-parent_page: Grammar points
+section: Grammar points
 ---
 Following this helps:
 
