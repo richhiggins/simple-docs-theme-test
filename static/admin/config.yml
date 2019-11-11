@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: richhiggins/simple-docs-theme-test
+  name: git-gateway
+  branch: master
 
 media_folder: static/img
 public_folder: /img
