@@ -20,6 +20,20 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Parent page", name: "parent_page", widget: "relation",
-      collection: "pages", searchFields:["title"], valueField: "title",
+      - { label: "Section", name: "section", widget: "relation",
+      collection: "sections", searchFields:["title"], valueField: "title",
       displayFields: ["title"], required: false }
+
+  - name: "sections"
+    label: "Sections"
+    folder: "sections"
+    create: true
+    slug: "{{fields.slug}}"
+    preview_path: "/{{fields.slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
